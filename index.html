@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Перевод чисел</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-inverse text-xs-center" style="background-color: #c0c0c0; border-top-left-radius: 0; border-top-right-radius: 0;">
+    <div class="container-fluid"  style="background-color: #c0c0c0; border-top-left-radius: 0; border-top-right-radius: 0;">
+        <div class="navbar-header">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4" style="color: #014c8c;">
+                <h7>Перевод чисел</h7>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="inputNumber" placeholder="Введите число" oninput="AlertWrong()">
+            <div id="hiddenLabel" style="visibility: hidden; color: red;">
+                Неверный ввод
+            </div>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <h5>Из:</h5>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-xs-center">
+    <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+            <div class="btn-group">
+                <label class="btn btn-secondary">
+                    <input type="radio" name="inputSysRB" value="10" checked> 10
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="inputSysRB" value="2"> 2
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="inputSysRB" value="8"> 8
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="inputSysRB" value="16"> 16
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-4"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <h5>В:</h5>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-xs-center">
+    <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+            <div class="btn-group">
+                <label class="btn btn-secondary">
+                    <input type="radio" name="outputSysRB" value="10"> 10
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="outputSysRB" value="2" checked> 2
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="outputSysRB" value="8"> 8
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="outputSysRB" value="16"> 16
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-4"></div>
+    </div>
+</div>
+<br>
+
+<div class="container-fluid">
+
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="outputNumber" readonly>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-success btn-block" onclick="ExC();">Перевод</button>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+<br>
+    <div class="row text-xs-center">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-secondary btn-block" onclick="Del();">Очистить</button>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
