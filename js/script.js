@@ -67,8 +67,10 @@ function ExC () {
         output.value = "Неверный ввод";
         //alert("Неверный ввод");
     }
-    else
+    else{
         output.value = outVal;
+		document.getElementById("congrats!").style.visibility = 'visible';
+	}
 
 }
 
